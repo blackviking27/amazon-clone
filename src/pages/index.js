@@ -7,11 +7,11 @@ export default function Home({ products }) {
     return (
         <div className="bg-gray-100">
             <Head>
-                <title>Amazon</title>
+                <title>Amazon Clone</title>
             </Head>
 
             {/* Header */}
-            <Header />
+            {/* <Header /> */}
 
             {/* Main content container */}
             <main className="max-w-screen-2xl mx-auto">
