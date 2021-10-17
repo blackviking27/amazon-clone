@@ -7,7 +7,7 @@ import Currency from "react-currency-formatter";
 import { loadStripe } from "@stripe/stripe-js";
 import axios from "axios";
 
-const StripePromise = loadStripe(process.env.stripe_public_key);
+const StripePromise = loadStripe(`${process.env.stripe_public_key}`);
 
 export default function checkout() {
     // Get items from the stores
