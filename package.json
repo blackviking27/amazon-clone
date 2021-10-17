@@ -8,15 +8,21 @@
   "dependencies": {
     "@heroicons/react": "^1.0.4",
     "@reduxjs/toolkit": "^1.6.2",
+    "@stripe/stripe-js": "^1.19.1",
     "@tailwindcss/line-clamp": "^0.2.2",
-    "firebase": "^9.1.2",
+    "axios": "^0.23.0",
+    "firebase": "8.10.0",
+    "firebase-admin": "^10.0.0",
+    "micro": "^9.3.4",
+    "moment": "^2.29.1",
     "next": "latest",
     "next-auth": "^3.29.0",
     "react": "^17.0.2",
     "react-currency-formatter": "^1.1.0",
     "react-dom": "^17.0.2",
     "react-redux": "^7.2.5",
-    "react-responsive-carousel": "^3.2.21"
+    "react-responsive-carousel": "^3.2.21",
+    "stripe": "^8.181.0"
   },
   "devDependencies": {
     "autoprefixer": "^10.2.6",
