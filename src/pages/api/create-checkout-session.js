@@ -2,6 +2,12 @@ const stripe = require("stripe")(`${process.env.STRIPE_SECRET_KEY}`);
 
 export default async (req, res) => {
     const { items, email } = req.body;
+    
+    // For debugging
+    console.log("Request Received ..... ");
+    console.log(email);
+    console.log(items);
+    
 
     // Creating an object to send to stripe
     const transformedItems = items.map((item) => ({
