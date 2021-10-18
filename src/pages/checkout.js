@@ -7,7 +7,7 @@ import Currency from "react-currency-formatter";
 import { loadStripe } from "@stripe/stripe-js";
 import axios from "axios";
 
-const stripePromise = loadStripe(process.env.stripe_public_key);
+const stripePromise = loadStripe(`${process.env.stripe_public_key}`);
 
 export default function checkout() {
     // Get items from the stores
@@ -21,7 +21,7 @@ export default function checkout() {
         const stripe = await stripePromise;
 
         // Call the backend to create a checkout session
-        console.log("Creating checkout session");
+//         console.log("Creating checkout session");
         const checkoutSession = await axios.post(
             "/api/create-checkout-session",
             {
@@ -30,7 +30,7 @@ export default function checkout() {
             }
         );
         
-        console.log("Session completed");
+//         console.log("Session completed");
         //  Redirect user to stripte checkout
         const result = await stripe.redirectToCheckout({
             sessionId: checkoutSession.data.id,
